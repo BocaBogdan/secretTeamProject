@@ -1,0 +1,40 @@
+.ax-header-action-button {
+    color: #C94040;
+    background-color: #CCFE67;
+    width: 300px;
+    margin-right: 50px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.ax-header-action-button:hover {
+    color: #E5FCB6;
+    background-color: #C73C1A;
+}
+
+.ax-action {
+    margin-top: 100px;
+    width: 75%;
+    padding: 50px;
+}
+
+.ax-action__img {
+    width: 250px;
+    height: 250px;
+}
+
+.ax-action__description {
+    padding-left: 30px;
+    font-size: 26px;
+}
+
+.ax-action-current-price {
+    font-size: 24px;
+    margin: 25px 0;
+    text-decoration: underline;
+}
+
+.ax-action-time-left {
+    font-size: 20px;
+    color: #363636;
+}

@@ -1,0 +1,13 @@
+.ax-header-action-button {
+    color: #C94040;
+    background-color: #CCFE67;
+    width: 300px;
+    margin-right: 50px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.ax-header-action-button:hover {
+    color: #E5FCB6;
+    background-color: #C73C1A;
+}

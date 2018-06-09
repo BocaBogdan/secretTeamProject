@@ -1,0 +1,238 @@
+body {
+    height: 100vh;
+    background-color: #045873;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-bubble {
+    border-radius: 50%;
+    box-shadow: 10px 5px 10px #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.container-title {
+    font-size: 56px;
+    color: #FFFFFF;
+    align-self: flex-start;
+}
+
+.container-bubble--mini {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #63ff26;
+    background: #CCFE67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-bubble--small {
+    width: 500px;
+    height: 500px;
+    border: 10px solid #345B66;
+    background: #50ADC7;
+    color: #FFFFFF;
+}
+
+.container-bubble--small:hover {
+    width: 550px;
+    height: 550px;
+}
+
+.container-bubble--big {
+    width: 700px;
+    height: 700px;
+    border: 10px solid #7CAB1F;
+    background-color: #FBFE67;
+    color: #FFFFFF;
+}
+
+.container-bubble--big:hover {
+    width: 800px;
+    height: 700px;
+}
+
+.small-form,
+.large-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.error-form {
+    animation: error 2.5s forwards;
+}
+
+.error-message {
+    color: #50ADC7;
+    font-size: 21px;
+}
+
+@keyframes error {
+    0% {
+        background: #50ADC7;
+    }
+    100% {
+        background: #c73c1a;
+    }
+}
+
+.bubble_out {
+    animation: bubble_out 1.5s ease-out;
+}
+
+@keyframes bubble_out {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+}
+
+.bubble_in {
+    animation: bubble_in 1.5s ease-in;
+}
+
+@keyframes bubble_in {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.small-form-title {
+    margin-top: 5%;
+    font-size: 3em;
+}
+
+.login-input {
+    width: 80%;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.login-input::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+.login-label {
+    align-items: center;
+    display: flex;
+    width: 75%;
+}
+
+.login-label span {
+    padding-left: 20px;
+}
+
+.login-button {
+    width: 50%;
+    color: #137C99;
+    background-color: #B2D33E;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.login-button:hover {
+    color: #50ADC7;
+    background-color: #7CAB1F;
+}
+
+.large-form-title {
+    margin-top: 50px;
+    font-size: 48px;
+    color: #137C99;
+}
+
+.sing-un-input {
+    width: 80%;
+    color: #137C99;
+    font-size: 22px;
+}
+
+.sing-un-input::placeholder {
+    color: #137C99;
+    font-size: 18px;
+}
+
+.sing-un-button {
+    width: 200px;
+    color: #CCFE67;
+    background-color: #E26040;
+    font-size: 26px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.sing-un-button:hover {
+    background-color: #C73C1A;
+    color: #E5FCB6;
+}
+
+/* Style for responsive */
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .container-title {
+        order: -1;
+        align-self: center;
+    }
+
+    .container-bubble--small {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container-bubble--big {
+        width: 400px;
+        height: 400px;
+    }
+
+    .container-bubble--small:hover {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container-bubble--big:hover {
+        width: 400px;
+        height: 400px;
+    }
+
+    .small-form-title {
+        font-size: 1.5em;
+    }
+
+    .login-button {
+        font-size: 18px;
+    }
+
+    .large-form-title {
+        font-size: 1.5em;
+    }
+}

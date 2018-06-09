@@ -22,7 +22,15 @@ $GLOBALS['config'] = array(
 );
 // spl = standard php librarie restul e destul de descriptiv
 spl_autoload_register(function($class){
-	require_once 'classes/' . $class . '.php';
+	if(file_exists('./classes/'.$class.'.php')){
+		require_once './classes/'.$class.'.php';
+	}else if(file_exists('Model/'.$class.'.php')){
+		 require_once 'Model/' . $class . '.php';
+	}else if(file_exists('Controller/'.$class.'.php')){
+		 require_once 'Controller/' . $class . '.php';
+	}
+		
+       
 });
 
 require_once 'functions/sanitize.php';

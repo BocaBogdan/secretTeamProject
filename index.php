@@ -58,7 +58,10 @@
         </header>
 
         <main class="ax-container">
-
+            <?php
+                $value = Index::getFilterProducts("Merge");
+                var_dump($value);
+            ?>
         </main>
 
         <footer class="ax-footer">

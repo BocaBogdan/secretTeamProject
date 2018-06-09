@@ -50,7 +50,45 @@ button, a {
 .ax-header-action-button--left {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    margin: 0;
+    margin-right: 0 !important;
+}
+
+.ax-header-action-button__relative {
+    position: relative;
+}
+
+.ax-header-action-drop-down-container {
+    background: #0f99c5;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+}
+
+.ax-header-action-drop-down-container:hover {
+    display: flex;
+    top: 50px;
+}
+
+.ax-header-action-button__relative:hover + .ax-header-action-drop-down-container {
+    display: flex;
+    top: 50px;
+}
+
+.ax-header-action-drop-down-container--selector {
+    align-items: center;
+    border-radius: 0;
+    color: #B2D33E;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 40px;
+    justify-content: center;
+}
+
+.ax-header-action-drop-down-container--selector:hover {
+    background-color: #7CAB1F;
+    color: #50ADC7;
 }
 
 .ax-header-action-button--right {

@@ -206,6 +206,10 @@ button, a {
     font-size: 12px;
 }
 
+.test {
+	margin: 0;
+}
+
 @media only screen and (max-width: 800px) {
     .ax-card-small {
         width: 48%;

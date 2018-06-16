@@ -208,6 +208,7 @@ button, a {
 
 .test {
 	margin: 0;
+	border: 1px solid black;
 }
 
 @media only screen and (max-width: 800px) {
